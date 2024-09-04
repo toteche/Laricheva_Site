@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Cygre-Bold';
+    src: url("../fonts/Cygre-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Cygre-BoldIt';
+    src: url("../fonts/Cygre-BoldIt.ttf");
+}
+
+@font-face {
+    font-family: 'Cygre-Book';
+    src: url("../fonts/Cygre-Book.ttf");
+}
+
+@font-face {
+    font-family: 'Cygre-ExtraBold';
+    src: url("../fonts/Cygre-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'Cygre-Regular';
+    src: url("../fonts/Cygre-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Cygre-Medium';
+    src: url("../fonts/Cygre-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Cygre-Semibold';
+    src: url("../fonts/Cygre-Semibold.ttf");
+}
+
+@font-face {
+    font-family: 'Unbounded-SemiBold';
+    src: url("../fonts/Unbounded-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'Unbounded-Medium';
+    src: url("../fonts/Unbounded-Medium.ttf");
+}
+
+body {
+    background-color: #E8ECFF;
+    font-family: 'Cygre-Medium', sans-serif;
+    color: #1D1D1D;
+}
+
+.container {
+    width: 82%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+.button {
+    background-color: #E8ECFF;
+    border-radius: 160px;
+    width: 348px;
+    height: 88px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 38px;
+    color: #1D1D1D;
+    outline: none;
+    border-color: #1D1D1D;
+    border-width: 3px;
+}
+
+.red-button {
+    background-color: #FF2C78;
+    color: #E8ECFF;
+    width: 516px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #cdd0e1;
+}
+
+.button.red-button:hover {
+    background-color: #c6225d;
+}
+
+.header {
+    padding: 59px 0 62px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+
+.menu {
+    margin-left: 356px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 88px;
+}
+
+.menu-item a {
+    font-size: 27px;
+    line-height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #1D1D1D;
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid #1D1D1D;
+}
+
+.main-content {
+    margin-top: 148px;
+}
+
+.main-info {
+    position: relative;
+}
+
+.main-info-top{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-info-top .item1, .item2 {
+    flex-basis: 50%;
+}
+
+.main-action {
+    display: flex;
+    justify-content: center;
+}
+
+.main-date{
+    font-family: 'Cygre-SemiBold', sans-serif;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 4px;
+}
+
+.main-class-length {
+    position: absolute;
+    right: 0px;
+}
+
+.main-title-length {
+    font-family: 'Cygre-Bold', sans-serif;
+    font-size: 55px;
+    color: #FF2C78;
+}
+
+.main-title {
+    font-family: 'Unbounded-SemiBold', sans-serif;
+    font-size: 144px;
+    line-height: 100%;
+    margin-bottom: 46px;
+    display: flex;
+    justify-content: center;
+    margin-top: 79px;
+}
+
+.main-items {
+
+}
+
+.main-text {
+    font-family: 'Cygre-Regular', sans-serif;
+    font-size: 38px;
+    line-height: 115%;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-info-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.main-info-actions .left-button{
+    /*margin-left: 220px;*/
+}
+
+.main-info-actions .button {
+    margin-right: 42px;
+}
+
+.author {
+    padding-top: 270px;
+}
+
+.author-title-top{
+    padding-bottom: 128px;
+}
+
+.author-title {
+    font-family: Unbounded, sans-serif;
+    font-size: 100px;
+    margin-bottom: 58px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #1D1D1D;
+}
+
+.author-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-about {
+    flex-basis: 30%;
+}
+
+.author-chapter-title {
+    font-family: Cygre-Bold, sans-serif;
+    font-size: 63px;
+    line-height: 121%;
+    letter-spacing: 2px;
+    margin-bottom: 72px;
+}
+
+.author-text {
+    font-family: Cygre-Medium, sans-serif;
+    font-size: 30px;
+    line-height: 126%;
+    letter-spacing: 2px;
+}
+
+.author-image{
+    flex-basis: 30%;
+}
+.author-program {
+    flex-basis: 30%;
+}
+
+.author-program-list {
+    list-style-type: none;
+}
+
+.author-program-item-title {
+    font-family: Cygre-ExtraBold, sans-serif;
+    font-size: 30px;
+    line-height: 90%;
+    letter-spacing: 2px;
+    margin-bottom: 27px;
+}
+
+.author-program-item-text {
+    font-family: Cygre-Medium, sans-serif;
+    font-size: 30px;
+    line-height: 90%;
+    letter-spacing: 2px;
+    margin-bottom: 27px;
+}
+
+.author-program-line {
+    border: none;
+    height: 3px;
+    background-color: #1D1D1D;
+    margin-bottom: 27px;
+}
+
+.author-slogan {
+    font-family: 'Cygre-BoldIt', sans-serif;
+    font-size: 38px;
+    line-height: 115%;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    display: flex;
+    text-align: center;
+}
+
+.about-program {
+    padding-top: 169px;
+}
+
+.about-program-top{
+}
+
+.about-program-title {
+    font-family: Unbounded, sans-serif;
+    font-size: 100px;
+    line-height: 100%;
+    margin-bottom: 50px;
+}
+
+.about-program-text {
+    font-family: Cygre-Regular, sans-serif;
+    font-size: 33px;
+    line-height: 115%;
+    margin-top: 60px;
+}
+
+.program-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 116px;
+}
+
+.step-one {
+    flex: 1;
+    flex-basis: 0;
+    height: fit-content;
+    border: 4px solid #1D1D1D;
+    border-radius: 40px;
+    padding: 52px;
+}
+
+.step-two {
+    flex: 1;
+    flex-basis: 0;
+    height: fit-content;
+    border: 4px solid #1D1D1D;
+    border-radius: 40px;
+    padding: 52px;
+    margin: 0 52px;
+}
+
+.step-three {
+    flex: 1;
+    flex-basis: 0;
+    height: fit-content;
+    border: 4px solid #1D1D1D;
+    border-radius: 40px;
+    padding: 52px;
+
+}
+
+.step-title {
+    font-family: Unbounded-Medium, sans-serif;
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 60px;
+}
+
+.step-text {
+    font-family: Cygre-Semibold, sans-serif;
+    font-size: 25px;
+    line-height: 135%;
+    margin-bottom: 60px;
+}
+
+.step-list {
+    font-family: Cygre-Semibold, sans-serif;
+    font-size: 24px;
+    line-height: 149%;
+    margin-bottom: 52px;
+}
+
+.step-one-text-light {
+    font-family: Cygre-Book, sans-serif;
+    font-size: 25px;
+    line-height: 135%;
+    letter-spacing: 2px;
+    margin-bottom: 52px;
+}
+
+.programm {
+    max-height: 1250px;
+}
+
+.mountains-image {
+    position: relative;
+    top: -370px;
+}
+.mountains-image img {
+    display: block;
+    margin: auto;
+    top: 811px;
+}
+
+.program-text {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: -600px;
+    background-color: #FF2C78;
+    color: #E8ECFF;
+    border-radius: 40px;
+    padding: 68px;
+}
+
+.program-text-title {
+    font-family: Unbounded-SemiBold, sans-serif;
+    font-size: 60px;
+    line-height: 115%;
+    letter-spacing: 2px;
+    margin-bottom: 66px;
+    display: flex;
+    justify-content: center;
+}
+
+.program-text-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.program-text-items .item1, .item2 {
+    flex-basis: 20%;
+}
+
+.program-text-block-l {
+    margin-right: 100px;
+}
+
+.program-text-list {
+    font-family: Cygre-Medium, sans-serif;
+    font-size: 35px;
+    line-height: 125%;
+    letter-spacing: 4px;
+}
+
+.feedback {
+    /*padding-top: 232px;*/
+    margin-top: 232px;
+}
+
+.feedback-header {
+}
+
+.feedback-header-text {
+    font-family: Unbounded-SemiBold, sans-serif;
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+
+.feedback-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(652px, 1fr));
+    gap: 52px;
+    margin-top: 118px;
+}
+
+.feedback-display-block {
+    background-color: #FF2C78;
+    color: #FFFFFF;
+    width: 652px;
+    height: 710px;
+    border-radius: 40px;
+}
+
+.feedback-display-block-h {
+    padding: 36px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-height: 94px;
+}
+
+.feedback-display-block-h-data {
+    font-family: Cygre-Semibold, sans-serif;
+    font-size: 33px;
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+
+.feedback-display-block-data {
+    font-family: Cygre-Medium, sans-serif;
+    font-size: 33px;
+    line-height: 133%;
+    letter-spacing: 1px;
+    margin-top: 26px;
+    padding-left: 56px;
+    padding-right: 56px;
+}
+
+.feedback-display-block-data-pic {
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+    padding-bottom: 26px;
+}
+
+.feedback-f {
+}
+
+.questions {
+    margin-top: 232px;
+}
+
+.questions-top {
+}
+
+.questions-top-title {
+    font-family: Unbounded, sans-serif;
+    font-size: 100px;
+    line-height: 100%;
+    margin-bottom: 50px;
+}
+
+.questions-list {
+
+}
+
+.questions-list-items {
+    list-style-type: none;
+}
+
+.question-list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-list-items-title {
+    font-family: Cygre-Medium, sans-serif;
+    font-size: 33px;
+    line-height: 115%;
+    letter-spacing: 2px;
+    margin-top: 66px;
+    margin-bottom: 50px;
+}
+
+.arrow16 {
+    display: flex;
+    align-items: center;
+}
